@@ -23,7 +23,7 @@ var firebaseConfig = {
                 purpose : "addinguser"
           })
           localStorage.setItem("room_name", room_name)
-          window.location = "twitter_page.html"
+          window.location = "kwitter_page.html"
     }
 
     document.getElementById("welcomeuser").innerHTML = "Welcome " + username + "!"
@@ -41,7 +41,7 @@ function getData() {firebase.database().ref("/").on('value', function(snapshot) 
 function redirectToThePage(name){
       localStorage.setItem("room_name", name)
 
-      window.location = "twitter_page.html"
+      window.location = "kwitter_page.html"
 }
 function logout(){
       localStorage.removeItem("User")
